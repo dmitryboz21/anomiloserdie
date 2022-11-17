@@ -1,0 +1,174 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	section.how-help.js-tabs-box
+		.container-help
+			.how-help__title.h1 КАК ПОМОЧЬ
+			.tabs-triggers
+				.tab_accordion.tabs-triggers__item.tabs-triggers__item--active(data-rel="1") Помощь деньгами
+				.tab_accordion.tabs-triggers__item(data-rel="2") Помощь вещами
+				.tab_accordion.tabs-triggers__item(data-rel="3") Установить ящик
+				.tab_accordion.tabs-triggers__item(data-rel="4") Стать волонтером
+
+		.tabs-content
+			.tabs-content__item.tabs-content__item--active(id="1")
+				.widget-wrap
+					img.widget-wrap__bg(src="images/bi.jpg", alt="")
+					.widget-wrap__content 
+						.widget-wrap-oferta Осуществляя пожертвование любым из способов, вы принимаете условия
+							a(href="")   оферты
+
+				
+				.container-help
+					.donations-accounts
+						.donations-accounts__title.h1 БЕЗНАЛИЧНОЕ ПЕРЕЧИСЛЕНИЕ НА СЧЕТА БФ «Я БЕЗ МАМЫ»
+						p.donations-accounts__desc Вы можете пожертвовать деньги на расчетный счет фонда «Я без мамы»
+						.donations-accounts__cards
+							.donations-accounts__card
+								.donations-accounts__card-img 
+									img(src="images/bank-icon.jpg", alt="")
+								.donations-accounts__card-info
+									.donations-row
+										.donations-row-name Организация
+										.donations-row-val БЛАГОТВОРИТЕЛЬНЫЙ ФОНД  «Я БЕЗ МАМЫ»
+									.donations-row
+										.donations-row-name ИНН
+										.donations-row-val 6165139870
+									.donations-row
+										.donations-row-name Расчётный счёт
+										.donations-row-val 40703.810.6.52090001466
+									.donations-row
+										.donations-row-name Банк
+										.donations-row-val ЮГО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК, Г. РОСТОВ-НА-ДОНУ
+									.donations-row
+										.donations-row-name БИК
+										.donations-row-val 046015602
+									.donations-row
+										.donations-row-name Корр. Счёт
+										.donations-row-val 30101.810.6.00000000602
+								a.donations-accounts__card-link(href="") Скачать квитанцию для оплаты в банке Сбербанк
+							.donations-accounts__card
+								.donations-accounts__card-img 
+									img(src="images/bank-icon.jpg", alt="")
+								.donations-accounts__card-info
+									.donations-row
+										.donations-row-name Организация
+										.donations-row-val БЛАГОТВОРИТЕЛЬНЫЙ ФОНД  «Я БЕЗ МАМЫ»
+									.donations-row
+										.donations-row-name ИНН
+										.donations-row-val 6165139870
+									.donations-row
+										.donations-row-name Расчётный счёт
+										.donations-row-val 40703.810.6.52090001466
+									.donations-row
+										.donations-row-name Банк
+										.donations-row-val ЮГО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК, Г. РОСТОВ-НА-ДОНУ
+									.donations-row
+										.donations-row-name БИК
+										.donations-row-val 046015602
+									.donations-row
+										.donations-row-name Корр. Счёт
+										.donations-row-val 30101.810.6.00000000602
+								a.donations-accounts__card-link(href="") Скачать квитанцию для оплаты в банке Сбербанк 
+					.online-donation
+						.online-donation__title.h1 СДЕЛАТЬ ПОЖЕРТВОВАНИЕ СБЕРБАНК ОНЛАЙН
+						.online-donation__items
+							a.online-donation__item(href="")
+								img(src="images/online.jpeg", alt="")
+					
+
+			.tabs-content__item(id="2")
+				.things-help
+					.things-help__row Мы принимаем новые и бывшие в употреблении вещи в хорошем состоянии для помощи детям из кризисных семей.
+					.things-help__row Вы можете привезти на склад фонда, расположенный по адресу пр. Стачки 190/16 (со вторника по пятницу 10.00-18.00 и в субботу 10.00-17.00) или связаться с нами по телефону: +7 (952) 568-44-68
+					.things-help__row Если Вы отдаете вещи, которые уже были использованы, то проверьте их исправность, отсутствие дыр и пятен.
+					.things-help__row Каждому ребенку приятно будет получить в дар чистую одежду и целые книги или игрушки.
+				.container-help
+					.things-necessary
+						.h1 НЕОБХОДИМЫЕ ВЕЩИ
+						.things-necessary-categories
+							.things-necessary-category
+								.things-necessary-category__name ДЛЯ МЛАДЕНЦЕВ
+								.things-necessary-category__desc Подгузники любых размеров, детский крем или масло, присыпка, детские шампуни и мыло, одноразовые пеленки, влажные салфетки, стеклянные или пластиковые бутылочки, соски, пустышки, чистящие и моющие средства любые игрушки, погремушки, мобили, растяжки, вещи от 0 до 3-х лет, ходунки и манежи, коляски, кроватки и любая детская мебель.
+							.things-necessary-category
+								.things-necessary-category__name ДЛЯ ДЕТЕЙ ПОСТАРШЕ:
+								.things-necessary-category__desc Одежда, обувь, носки, нижнее белье, школьные принадлежности, ранцы/портфели, средства личной гигиены, детские книги, игрушки, вышивальные наборы, наборы для рукоделия, нитки, спицы, бисер и т.п., раскраски, конструкторы и пазлы, велосипеды, ролики, скейты, настольные игры.
+							.things-necessary-category
+								.things-necessary-category__name ДЛЯ МАЛОИМУЩИХ И МНОГОДЕТНЫХ СЕМЕЙ
+								.things-necessary-category__desc Одежда разных размеров, обувь, средства гигиены, продукты питания первой необходимости: крупы, соль, сахар, макароны, подсолнечное масло, консервные продукты и т.д., предметы мебели, посуда, эл техника: стир. машинки, пылесосы, утюги, микроволновые печи, компьютеры и т.д.
+							
+
+
+
+			.tabs-content__item(id="3")
+				.things-help
+					.things-help__row Если Вы хотите установить у себя в офисе/магазине/салоне красоты и т.д. ящик для сбора пожертвований или изготовить ящик на благотворительной основе, свяжитесь с нами по телефону 8-952-568-44-68.
+					.things-help__row Тот, кто спасает одного человека – спасает весь мир.
+			.tabs-content__item(id="4")
+				.questionnaire-volunteer
+
+					form.questionnaire-volunteer-main
+						.questionnaire-name Анкета волонтера
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Имя <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Фамилия <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input.js-airdatepicker(type="text")
+							.q-input-label Дата рождения <span>*</span>
+						
+						.q-input-wrap
+							.simple-select-wrap
+								select.js-simple-select(name="" data-placeholder=" ")
+									option
+									option(value="msk") Мужской
+									option(value="spb") Женский
+								.simple-select-items-wrapper
+								.q-input-label Пол
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Город <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input.js-phone-mask(type="text")
+							.q-input-label Телефон <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label E-mail <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Почему вы хотите стать волонтером? <span>*</span>
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Есть ли у вас опыт волонтерства? <span>*</span>
+						.q-input-wrap
+							.simple-select-wrap
+								select.js-simple-select(name="" data-placeholder=" ")
+									option
+									option(value="msk") Фотосъемка
+									option(value="spb") Помщь на мероприятиях
+									option(value="spb") Дизайн и верстка
+									option(value="spb") Авто-волонтер
+								.simple-select-items-wrapper
+								.q-input-label Какую помощь вы готовы предложить?
+						.q-input-wrap
+							input.q-input.js-q-input(type="text")
+							.q-input-label Свой вариант
+						.questionnaire-info Друзья, обратите внимание, что мы не набираем волонтеров для работы с детьми, оставшимися без попечения родителей в больницах. Такая работа выполняется только официально трудоустроенными сотрудниками - нянями.
+						.questionnaire-btn-wrap
+							button.questionnaire-btn(type="submit") Отправить
+						
+
+		.container-help
+			.gratitude Мы благодарим Вас за неравнодушие и желание вместе с нами творить добрые дела.
+

@@ -1,0 +1,102 @@
+@media screen and (max-width: 1040px) {
+    .h1 {
+        font-size: 30px;
+    }
+
+    .tabs-triggers {
+        margin-top: 23px;
+    }
+
+    .online-donation {
+        margin-top: 23px;
+    }
+
+    .online-donation__items {
+        margin-top: 23px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .online-donation__item {
+        width: calc(50% - 30px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .h1 {
+        font-size: 25px;
+    }
+
+    .tabs-triggers {
+        margin-top: 18px;
+
+        &__item {
+            margin-bottom: 17px;
+        }
+    }
+
+    .donations-accounts {
+        margin-top: 23px;
+    }
+
+    .donations-accounts__cards {
+        margin-left: 0;
+        margin-bottom: -23px;
+    }
+
+    .donations-accounts__card {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 23px;
+        padding: 20px;
+    }
+
+    .donations-accounts__card-info {
+        margin-top: 15px;
+    }
+
+    .donations-row:not(:first-child) {
+        margin-top: 15px;
+    }
+
+    .online-donation__items {
+        margin-left: 0;
+    }
+
+    .online-donation__item {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .things-necessary-categories {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+    .questionnaire-volunteer-main {
+        width: 100%;
+    }
+
+    .q-input-label {
+        font-size: 13px;
+        left: 0;
+    }
+
+    .q-input {
+        padding-left: 0 !important;
+    }
+
+    .select2-container--custom-theme .select2-selection--single .select2-selection__rendered {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .h1 {
+        font-size: 22px;
+    }
+
+
+}
