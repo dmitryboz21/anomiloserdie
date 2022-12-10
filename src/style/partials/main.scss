@@ -68,6 +68,11 @@ body {
 	height: 100%;
 }
 */
+
+body, div, a{
+	font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+	line-height: 1.3;
+}
 .air-datepicker-global-container {
 	z-index: 999;
 }
@@ -86,6 +91,18 @@ body {
 		max-width: calc(100% - 15px * 2);
 	}
 }
+
+.container-fpv2 {
+	box-sizing: border-box;
+	width: 1140px;
+	max-width: 95%;
+	max-width: calc(100% - 30px * 2);
+	margin: 0 auto;
+	line-height: 1.2;
+
+	@media screen and (max-width: 550px) {}
+}
+
 
 /*
 #jGrowl {
@@ -136,6 +153,12 @@ html {
 	text-align: center;
 	margin: 0;
 	font-size: 40px;
+}
+
+.how-help__subtitle {
+	text-align: center;
+	margin-top: 10px;
+	color: #6dc3e9;
 }
 
 .tabs-triggers {
@@ -202,14 +225,32 @@ html {
 		object-position: center center;
 	}
 
-	&__content {
+	&__container {
 		position: relative;
-		padding: 30px 30px;
 		z-index: 2;
+	}
+
+	&__content {
+		padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__widget-box {
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	&-oferta {
 		color: #ffffff;
+		text-align: center;
+
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
 
 		a {
 
@@ -324,10 +365,8 @@ html {
 	background-color: #6dc3e9;
 	color: #fff;
 
-	&__row {
-		&:not(:first-child) {
-			margin-top: 15px;
-		}
+	p+p {
+		margin-top: 15px;
 	}
 }
 
@@ -373,7 +412,8 @@ html {
 
 	&-main {
 		background-color: #fff;
-		width: 60%;
+		width: 700px;
+		max-width: 100%;
 		padding: 15px 31px;
 	}
 }
@@ -480,8 +520,8 @@ html {
 		transition: all .3s;
 
 		&:hover {
-			color: #DE845A;
-			background-color: blanchedalmond;
+			//color: #DE845A;
+			background-color: #f78805;
 
 		}
 

@@ -1,0 +1,189 @@
+.front-page-v2 {
+	padding: 30px 0;
+}
+
+.fpv2-flex {
+	display: flex;
+
+
+	&__main {
+		width: calc(100% - 270px * 2 + 20px * 2);
+	}
+
+	&__right {
+		display: flex;
+	}
+}
+
+.fpv2-leader-photo {
+	float: right;
+	padding-left: 20px;
+	padding-bottom: 20px;
+
+	img {
+		width: 208px;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.fpv2-text {
+	font-size: 16px;
+
+	b,
+	strong {
+		font-weight: 700;
+	}
+
+	em {
+		font-style: italic;
+	}
+	a{
+		color: #2497d1;
+	}
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+	p{
+		margin: 0;
+		&+*{
+			margin-top: 15px;
+		}
+	}
+}
+
+.fpv2-quote {
+	background: #2497D1;
+	color: #fff;
+	padding: 24px;
+	font-style: italic;
+
+	a {
+		color: #fff;
+
+	}
+	p{
+		margin: 0;
+		&+*{
+			margin-top: 10px;
+		}
+	}
+
+}
+
+.fpv2-sidebar {
+	margin-left: 20px;
+	width: 270px;
+}
+
+
+.fpv2-news {
+	background: #2497D1;
+	color: #fff;
+	padding: 24px;
+	position: sticky;
+	top: 20px;
+
+	&__title {
+		color: #fff;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: .03em;
+		text-transform: uppercase;
+		padding-bottom: 9px;
+		border-bottom: 2px solid #fff;
+
+	}
+
+	&__bottom {
+		margin-top: 15px;
+
+	}
+
+	&__bottom-all {
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: .03em;
+		color: #fff;
+		transition-duration: .3s;
+
+		&:hover {
+			color: #fff;
+			opacity: .7;
+
+		}
+	}
+
+}
+
+
+.fpv2-news-list {
+	margin-top: 15px;
+}
+
+.fpv2-news-item {
+	display: block;
+	transition-duration: .3s;
+
+	&__title {
+		color: #fff;
+		font-weight: 700;
+		font-size: 17px;
+	}
+
+	&__datetime {
+		color: #fff;
+		font-weight: 300;
+		font-size: 14px;
+		letter-spacing: .01em;
+		margin-top: 9px;
+		opacity: .8;
+	}
+
+	&+.fpv2-news-item {
+		margin-top: 15px;
+	}
+
+	&:hover {
+		opacity: .7;
+	}
+
+	&:active {}
+
+	&:focus {}
+}
+
+.fpv2-banners {
+	width: 100%;
+	position: sticky;
+	top: 20px;
+}
+
+.fpv2-banner {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+
+	&+.fpv2-banner {
+		margin-top: 15px;
+	}
+
+
+	img {
+		width: 100%;
+		height: auto;
+
+	}
+
+	transition-duration: .3s;
+
+	&:hover {
+		opacity: .7;
+	}
+
+	&:active {}
+
+	&:focus {}
+}

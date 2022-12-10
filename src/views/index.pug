@@ -13,6 +13,8 @@ block main
 	section.how-help.js-tabs-box
 		.container-help
 			.how-help__title.h1 КАК ПОМОЧЬ
+			.how-help__subtitle Найдите для себя подходящий пример благотворительности или выступите с собственной инициативой на благо общества
+
 			.tabs-triggers
 				.tab_accordion.tabs-triggers__item.tabs-triggers__item--active(data-rel="1") Помощь деньгами
 				.tab_accordion.tabs-triggers__item(data-rel="2") Помощь вещами
@@ -23,18 +25,47 @@ block main
 			.tabs-content__item.tabs-content__item--active(id="1")
 				.widget-wrap
 					img.widget-wrap__bg(src="images/bi.jpg", alt="")
-					.widget-wrap__content 
-						.widget-wrap-oferta Осуществляя пожертвование любым из способов, вы принимаете условия
-							a(href="")   оферты
+					.widget-wrap__container.container-help
+						.widget-wrap__content
+							.widget-wrap__widget-box
+								img(src="images/PLACEHOLDER.jpg", alt="")
+							.widget-wrap-oferta Осуществляя пожертвование любым из способов, вы принимаете условия
+								a(href="")   оферты
 
-				
+
 				.container-help
 					.donations-accounts
-						.donations-accounts__title.h1 БЕЗНАЛИЧНОЕ ПЕРЕЧИСЛЕНИЕ НА СЧЕТА БФ «Я БЕЗ МАМЫ»
-						p.donations-accounts__desc Вы можете пожертвовать деньги на расчетный счет фонда «Я без мамы»
+						.donations-accounts__title.h1 БЕЗНАЛИЧНОЕ ПЕРЕЧИСЛЕНИЕ НА СЧЕТА АНО СОБСПЗГ "Милосердие-на-Дону"
+						p.donations-accounts__desc Вы можете пожертвовать деньги на расчетный счет АНО СОБСПЗГ "Милосердие-на-Дону"
 						.donations-accounts__cards
 							.donations-accounts__card
-								.donations-accounts__card-img 
+								.donations-accounts__card-img
+									img(src="images/bank-icon.jpg", alt="")
+								.donations-accounts__card-info
+									.donations-row
+										.donations-row-name Полное наименование организации
+										.donations-row-val Автономная некоммерческая организация социального обслуживания, благотворительной и социальной поддержки и защиты граждан «Милосердие-на-Дону»
+									.donations-row
+										.donations-row-name Организация
+										.donations-row-val АНО СОБСПЗГ «Милосердие-на-Дону»
+									.donations-row
+										.donations-row-name ИНН
+										.donations-row-val 6165139870
+									.donations-row
+										.donations-row-name Расчётный счёт
+										.donations-row-val 40703.810.6.52090001466
+									.donations-row
+										.donations-row-name Банк
+										.donations-row-val ЮГО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК, Г. РОСТОВ-НА-ДОНУ
+									.donations-row
+										.donations-row-name БИК
+										.donations-row-val 046015602
+									.donations-row
+										.donations-row-name Корр. Счёт
+										.donations-row-val 30101.810.6.00000000602
+								a.donations-accounts__card-link(href="") Скачать квитанцию для оплаты в банке Сбербанк
+							.donations-accounts__card
+								.donations-accounts__card-img
 									img(src="images/bank-icon.jpg", alt="")
 								.donations-accounts__card-info
 									.donations-row
@@ -56,42 +87,20 @@ block main
 										.donations-row-name Корр. Счёт
 										.donations-row-val 30101.810.6.00000000602
 								a.donations-accounts__card-link(href="") Скачать квитанцию для оплаты в банке Сбербанк
-							.donations-accounts__card
-								.donations-accounts__card-img 
-									img(src="images/bank-icon.jpg", alt="")
-								.donations-accounts__card-info
-									.donations-row
-										.donations-row-name Организация
-										.donations-row-val БЛАГОТВОРИТЕЛЬНЫЙ ФОНД  «Я БЕЗ МАМЫ»
-									.donations-row
-										.donations-row-name ИНН
-										.donations-row-val 6165139870
-									.donations-row
-										.donations-row-name Расчётный счёт
-										.donations-row-val 40703.810.6.52090001466
-									.donations-row
-										.donations-row-name Банк
-										.donations-row-val ЮГО-ЗАПАДНЫЙ БАНК ПАО СБЕРБАНК, Г. РОСТОВ-НА-ДОНУ
-									.donations-row
-										.donations-row-name БИК
-										.donations-row-val 046015602
-									.donations-row
-										.donations-row-name Корр. Счёт
-										.donations-row-val 30101.810.6.00000000602
-								a.donations-accounts__card-link(href="") Скачать квитанцию для оплаты в банке Сбербанк 
 					.online-donation
 						.online-donation__title.h1 СДЕЛАТЬ ПОЖЕРТВОВАНИЕ СБЕРБАНК ОНЛАЙН
 						.online-donation__items
 							a.online-donation__item(href="")
 								img(src="images/online.jpeg", alt="")
-					
+
 
 			.tabs-content__item(id="2")
 				.things-help
-					.things-help__row Мы принимаем новые и бывшие в употреблении вещи в хорошем состоянии для помощи детям из кризисных семей.
-					.things-help__row Вы можете привезти на склад фонда, расположенный по адресу пр. Стачки 190/16 (со вторника по пятницу 10.00-18.00 и в субботу 10.00-17.00) или связаться с нами по телефону: +7 (952) 568-44-68
-					.things-help__row Если Вы отдаете вещи, которые уже были использованы, то проверьте их исправность, отсутствие дыр и пятен.
-					.things-help__row Каждому ребенку приятно будет получить в дар чистую одежду и целые книги или игрушки.
+					.container-help
+						.things-help__row Мы принимаем новые и бывшие в употреблении вещи в хорошем состоянии для помощи детям из кризисных семей.
+						.things-help__row Вы можете привезти на склад фонда, расположенный по адресу пр. Стачки 190/16 (со вторника по пятницу 10.00-18.00 и в субботу 10.00-17.00) или связаться с нами по телефону: +7 (952) 568-44-68
+						.things-help__row Если Вы отдаете вещи, которые уже были использованы, то проверьте их исправность, отсутствие дыр и пятен.
+						.things-help__row Каждому ребенку приятно будет получить в дар чистую одежду и целые книги или игрушки.
 				.container-help
 					.things-necessary
 						.h1 НЕОБХОДИМЫЕ ВЕЩИ
@@ -105,14 +114,15 @@ block main
 							.things-necessary-category
 								.things-necessary-category__name ДЛЯ МАЛОИМУЩИХ И МНОГОДЕТНЫХ СЕМЕЙ
 								.things-necessary-category__desc Одежда разных размеров, обувь, средства гигиены, продукты питания первой необходимости: крупы, соль, сахар, макароны, подсолнечное масло, консервные продукты и т.д., предметы мебели, посуда, эл техника: стир. машинки, пылесосы, утюги, микроволновые печи, компьютеры и т.д.
-							
+
 
 
 
 			.tabs-content__item(id="3")
 				.things-help
-					.things-help__row Если Вы хотите установить у себя в офисе/магазине/салоне красоты и т.д. ящик для сбора пожертвований или изготовить ящик на благотворительной основе, свяжитесь с нами по телефону 8-952-568-44-68.
-					.things-help__row Тот, кто спасает одного человека – спасает весь мир.
+					.container-help
+						.things-help__row Если Вы хотите установить у себя в офисе/магазине/салоне красоты и т.д. ящик для сбора пожертвований или изготовить ящик на благотворительной основе, свяжитесь с нами по телефону 8-952-568-44-68.
+						.things-help__row Тот, кто спасает одного человека – спасает весь мир.
 			.tabs-content__item(id="4")
 				.questionnaire-volunteer
 
@@ -127,7 +137,7 @@ block main
 						.q-input-wrap
 							input.q-input.js-q-input.js-airdatepicker(type="text")
 							.q-input-label Дата рождения <span>*</span>
-						
+
 						.q-input-wrap
 							.simple-select-wrap
 								select.js-simple-select(name="" data-placeholder=" ")
@@ -159,15 +169,28 @@ block main
 									option(value="spb") Помщь на мероприятиях
 									option(value="spb") Дизайн и верстка
 									option(value="spb") Авто-волонтер
+									option(value="spb") Сиделка
+									option(value="spb") Медицинское сопровождение
 								.simple-select-items-wrapper
 								.q-input-label Какую помощь вы готовы предложить?
+						.q-input-wrap
+							.simple-select-wrap
+								span.wpcf7-form-control-wrap
+									select.wpcf7-form-control.wpcf7-select.wpcf7-validates-as-required.js-simple-select(data-placeholder=' ' name='y_gender' aria-required='true' aria-invalid='false')
+										option(value='')
+										option(value='1:Мужской') 1:Мужской
+										option(value='2:Женский') 2:Женский
+								p
+								.simple-select-items-wrapper
+								.q-input-label Пол
+
 						.q-input-wrap
 							input.q-input.js-q-input(type="text")
 							.q-input-label Свой вариант
 						.questionnaire-info Друзья, обратите внимание, что мы не набираем волонтеров для работы с детьми, оставшимися без попечения родителей в больницах. Такая работа выполняется только официально трудоустроенными сотрудниками - нянями.
 						.questionnaire-btn-wrap
 							button.questionnaire-btn(type="submit") Отправить
-						
+
 
 		.container-help
 			.gratitude Мы благодарим Вас за неравнодушие и желание вместе с нами творить добрые дела.
