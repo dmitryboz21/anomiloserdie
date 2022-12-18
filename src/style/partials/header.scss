@@ -4,8 +4,8 @@
 	right: 20px;
 	top: 10px;
 	background: #2497d1;
-    width: 60px;
-    height: 50px;
+	width: 60px;
+	height: 50px;
 	border-radius: 5px;
 	z-index: 105;
 
@@ -18,28 +18,47 @@
 	}
 }
 
+
+.hfg_footer {
+	max-height: 1px;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 959px) {
+
+	.header-bottom {
+		max-height: 1px;
+		overflow: hidden;
+	}
+}
+
 @media screen and (max-width: 959px) {
-	#header-grid > nav.header--row.header-main.hide-on-desktop.layout-full-contained.nv-navbar.header--row > div > div > div{
+	#header-grid>nav.header--row.header-main.hide-on-desktop.layout-full-contained.nv-navbar.header--row>div>div>div {
 		display: flex;
 		justify-content: center;
 	}
+
 	#header-grid .hfg-slot.right {
 		display: none;
 	}
+
 	#header-grid .hfg-slot.left {
-		.builder-item{
+		.builder-item {
 			width: 100%;
-			p{
+
+			p {
 				text-align: center !important;
 			}
 
 		}
 	}
-	.site-logo{
-		max-width: 100% !important;
-		img{
 
+	.site-logo {
 		max-width: 100% !important;
+
+		img {
+
+			max-width: 100% !important;
 		}
 	}
 }
@@ -95,12 +114,6 @@
 	}
 }
 
-//прячу стандартные меню
-.header-bottom,
-.hfg_footer {
-	max-height: 1px;
-	overflow: hidden;
-}
 
 
 .page-new-wrap {
@@ -123,7 +136,7 @@
 	left: 0;
 	top: 0;
 	height: calc(100vh);
-	height: calc(var(--vh,1vh) * 100);
+	height: calc(var(--vh, 1vh) * 100);
 
 	width: 245px;
 	//padding: 50px 20px 100px 40px;
