@@ -44,8 +44,8 @@ $(document).ready(function () {
 	$('.js-phone-mask').each(function () {
 		var phoneMask = IMask(
 			$(this)[0], {
-				mask: '+{7}(000)000-00-00'
-			});
+			mask: '+{7}(000)000-00-00'
+		});
 	});
 
 
@@ -85,5 +85,32 @@ $(document).ready(function () {
 			inp.select2('open');
 		});
 	});
+
+
+
+
+	$('.js-sb-open-sub').click(function (event) {
+		event.preventDefault();
+		var item=$(this).closest('.newsidebar-menu-item')
+		if (item.hasClass('newsidebar-menu-item--opened-sub')) {
+			item.removeClass('newsidebar-menu-item--opened-sub');
+			item.find('.newsidebar-submenu').stop().slideUp(300);
+		}
+		else {
+			$(this).closest('.newsidebar-menu').find('.newsidebar-menu-item--opened-sub').removeClass('newsidebar-menu-item--opened-sub').find('.newsidebar-submenu').stop().slideUp(300);
+
+			item.addClass('newsidebar-menu-item--opened-sub');
+			item.find('.newsidebar-submenu').stop().slideDown(300);
+		}
+	});
+
+
+
+
+
+	new SimpleBar($('#sidebar-custom-sb')[0], {
+		autoHide: false
+	});
+
 
 });

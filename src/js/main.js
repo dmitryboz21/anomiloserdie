@@ -5,6 +5,7 @@
 //= libs/select2.min.js
 //= libs/select2-ru.js
 //= libs/imask.js
+//= libs/simplebar.min.js
 
 /* my scripts */
 

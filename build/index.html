@@ -12,9 +12,44 @@
     <!--title= `${page.title}`-->
   </head>
   <body>
-    <header class="site-header">
-      <div class="sh-burger"><span></span></div>
-    </header>
+    <div class="newsidebar">
+      <div class="newsidebar__inner" id="sidebar-custom-sb">
+        <div class="newsidebar__inner-2"><a class="newsidebar__logo" href="/"><img src="images/simplified-logo-2.png" alt=""></a>
+          <div class="newsidebar-menu-item newsidebar-search">
+            <form class="newsidebar-menu-item__link" action="">
+              <input class="newsidebar-search__input" type="text" name="" placeholder="Поиск">
+              <button class="newsidebar-search__btn" type="submit"> <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3199 17.9999L22.6238 22.2928M21.0072 11.1775C21.0072 16.7023 16.5285 21.1811 11.0036 21.1811C5.47877 21.1811 1 16.7023 1 11.1775C1 5.6526 5.47877 1.17383 11.0036 1.17383C16.5285 1.17383 21.0072 5.6526 21.0072 11.1775Z" stroke="#2497d1" stroke-width="2"/></svg></button>
+            </form>
+          </div>
+          <div class="newsidebar-menu">
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Главная</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Новости</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Подать заявление на обслуживание</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Обратная связь</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Социальные проекты</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Часто задаваемые вопросы</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Как помочь</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">Контакты</a></div>
+            <div class="newsidebar-menu-item newsidebar-menu-item--has-sub">
+              <div class="newsidebar-menu-item__link js-sb-open-sub">Только подменю</div>
+              <div class="newsidebar-menu-item__open-submenu js-sb-open-sub"></div>
+              <div class="newsidebar-submenu">
+                <div class="newsidebar-submenu__inner"><a class="newsidebar-submenu__item" href=""> подпункт 1</a><a class="newsidebar-submenu__item" href=""> подпункт 2</a><a class="newsidebar-submenu__item" href=""> подпункт 3</a><a class="newsidebar-submenu__item" href=""> подпункт 4</a><a class="newsidebar-submenu__item" href=""> подпункт 5</a></div>
+              </div>
+            </div>
+            <div class="newsidebar-menu-item newsidebar-menu-item--has-sub"><a class="newsidebar-menu-item__link" href="">Ссылка и подменю</a>
+              <div class="newsidebar-menu-item__open-submenu js-sb-open-sub"></div>
+              <div class="newsidebar-submenu">
+                <div class="newsidebar-submenu__inner"><a class="newsidebar-submenu__item" href=""> подпункт 1</a><a class="newsidebar-submenu__item" href=""> подпункт 2</a><a class="newsidebar-submenu__item" href=""> подпункт 3</a><a class="newsidebar-submenu__item" href=""> подпункт 4</a><a class="newsidebar-submenu__item" href=""> подпункт 5</a></div>
+              </div>
+            </div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">пункт 4</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">пункт 5</a></div>
+            <div class="newsidebar-menu-item"><a class="newsidebar-menu-item__link" href="">пункт 6</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="main">
       <section class="how-help js-tabs-box">
         <div class="container-help">
