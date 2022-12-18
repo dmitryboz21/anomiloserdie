@@ -4563,6 +4563,14 @@
 
 /* my scripts */
 
+
+$(document).ready(function () {
+	$('.sh-burger').click(function () {
+		$(this).toggleClass('sh-burger--active');
+		$('#newsidebar').toggleClass('newsidebar--mob-opened');
+	});
+
+});
 $(document).ready(function () {
 	$(".tabs-content__item").hide();
 	$(".tabs-content__item:first").show();

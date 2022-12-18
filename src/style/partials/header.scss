@@ -1,6 +1,52 @@
+.mob-menu-opener {
+	display: none;
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	background: #2497d1;
+    width: 60px;
+    height: 50px;
+	border-radius: 5px;
+	z-index: 105;
+
+
+	@media screen and (max-width: 1240px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+}
+
+@media screen and (max-width: 959px) {
+	#header-grid > nav.header--row.header-main.hide-on-desktop.layout-full-contained.nv-navbar.header--row > div > div > div{
+		display: flex;
+		justify-content: center;
+	}
+	#header-grid .hfg-slot.right {
+		display: none;
+	}
+	#header-grid .hfg-slot.left {
+		.builder-item{
+			width: 100%;
+			p{
+				text-align: center !important;
+			}
+
+		}
+	}
+	.site-logo{
+		max-width: 100% !important;
+		img{
+
+		max-width: 100% !important;
+		}
+	}
+}
+
 .sh-burger {
 	position: relative;
-	display: none;
+	display: block;
 	width: 34px;
 	height: 26px;
 	cursor: pointer;
@@ -34,19 +80,16 @@
 	}
 
 	&--active {
-		background: #F5F6FB;
 
 		span {
 			height: 0;
 
 			&::before {
 				transform: rotate(45deg);
-				background: #323340;
 			}
 
 			&::after {
 				transform: rotate(-45deg);
-				background: #323340;
 			}
 		}
 	}
@@ -68,13 +111,19 @@
 		margin-left: 300px;
 		width: calc(100% - 300px);
 	}
+
+	@media screen and (max-width: 1240px) {
+		margin-left: 0;
+		width: 100%;
+	}
 }
 
 .newsidebar {
 	position: fixed;
 	left: 0;
 	top: 0;
-	bottom: 0;
+	height: calc(100vh);
+	height: calc(var(--vh,1vh) * 100);
 
 	width: 245px;
 	//padding: 50px 20px 100px 40px;
@@ -90,6 +139,27 @@
 	@media screen and (min-width: 1400px) {
 		width: 300px;
 		padding-left: 40px;
+	}
+
+	@media screen and (max-width: 1240px) {
+		width: 100%;
+		padding-top: 50px;
+		left: -105vw;
+		opacity: 0;
+		pointer-events: none;
+		transition: all .3s;
+		border-left: 1px solid #2497d1;
+	}
+
+
+	@media screen and (max-width: 800px) {
+		padding-bottom: 50px;
+	}
+
+	&--mob-opened {
+		left: 0;
+		opacity: 1;
+		pointer-events: all;
 	}
 
 	.simplebar-scrollbar:before {
@@ -128,6 +198,12 @@
 		img {
 			max-width: 100%;
 		}
+
+		@media screen and (max-width: 1240px) {
+			display: none;
+
+		}
+
 	}
 }
 
@@ -155,6 +231,7 @@
 		transition: all 0.3s ease 0s;
 		padding: 9px 0;
 		padding-right: 30px;
+		width: 100%;
 
 		&:hover,
 		&--active {
@@ -260,7 +337,8 @@
 
 		&::placeholder {
 			color: #2497d1 !important;
-			&::placeholder{
+
+			&::placeholder {
 				opacity: .6 !important;
 			}
 		}

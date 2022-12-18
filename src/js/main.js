@@ -9,4 +9,5 @@
 
 /* my scripts */
 
+//= partials/header.js
 //= partials/main.js
