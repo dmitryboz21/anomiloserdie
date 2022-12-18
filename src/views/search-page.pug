@@ -1,0 +1,78 @@
+extends layouts/default_w-h-f
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	.new-type-page
+		.container-fpv2
+			.search-page-inner
+				.newsidebar-menu-item.newsidebar-search.newsidebar-search--search-page
+					form.newsidebar-menu-item__link.newsidebar-menu-item__link--search-page(action="")
+						input.newsidebar-search__input(type="text", name="" placeholder="Поиск" value="Поисковый запрос")
+						button.newsidebar-search__btn(type="submit")  <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.3199 17.9999L22.6238 22.2928M21.0072 11.1775C21.0072 16.7023 16.5285 21.1811 11.0036 21.1811C5.47877 21.1811 1 16.7023 1 11.1775C1 5.6526 5.47877 1.17383 11.0036 1.17383C16.5285 1.17383 21.0072 5.6526 21.0072 11.1775Z" stroke="#2497d1" stroke-width="2"/></svg>
+
+			.search-results
+				a.search-result(href="")
+					.search-result__title Результат 1
+					.search-result__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla ipsum nihil libero. Aliquam debitis soluta doloribus molestias totam cum quod nesciunt accusantium pariatur rem.
+				a.search-result(href="")
+					.search-result__title Результат 2
+					.search-result__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla ipsum nihil libero. Aliquam debitis soluta doloribus molestias totam cum quod nesciunt accusantium pariatur rem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla ipsum nihil libero. Aliquam debitis soluta doloribus molestias totam cum quod nesciunt accusantium pariatur rem.
+				a.search-result(href="")
+					.search-result__title Результат 3
+					.search-result__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla ipsum nihil libero. Aliquam debitis soluta doloribus molestias totam cum quod nesciunt accusantium pariatur rem.
+				a.search-result(href="")
+					.search-result__title Результат 4
+					.search-result__desc
+				a.search-result(href="")
+					.search-result__title Результат 5
+					.search-result__desc
+				a.search-result(href="")
+					.search-result__title Результат 6
+					.search-result__desc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nulla ipsum nihil libero. Aliquam debitis soluta doloribus molestias totam cum quod nesciunt accusantium pariatur rem.
+
+	.front-page-socials-wrap
+		.container-fpv2
+			.ssocials
+				a.ssocials-item(target='_blank' href='https://vk.com/imramkriya')
+					svg(width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg')
+						path.cls-1(fill='#ffffff' d='M16,3.38c.08-.35,0-.64-.53-.64H13.71a.76.76,0,0,0-.76.49,15.07,15.07,0,0,1-2.11,3.55c-.41.38-.59.53-.82.53s-.26-.15-.26-.5V3.38c0-.44-.12-.64-.5-.64H6.56a.41.41,0,0,0-.44.41c0,.41.62.49.68,1.67V7.37c0,.55-.09.67-.33.67-.58,0-2-2.17-2.84-4.63-.17-.47-.35-.67-.79-.67H1.11c-.47,0-.58.23-.58.49C.53,3.7,1.11,6,3.25,9a6.74,6.74,0,0,0,5.28,3.13c1.08,0,1.23-.23,1.23-.64,0-2-.09-2.17.44-2.17.26,0,.7.15,1.72,1.14,1.18,1.17,1.38,1.67,2,1.67h1.72c.5,0,.74-.23.59-.73-.32-1-2.52-3.11-2.64-3.25-.26-.33-.17-.47,0-.76A23.23,23.23,0,0,0,16,3.38Z')
+					.ssocials-item__text - МЫ В ВК
+			//	a.ssocials-item(target='_blank' href='https://www.youtube.com/channel/')
+					svg(width='17' height='12' viewBox='0 0 17 12' fill='none' xmlns='http://www.w3.org/2000/svg')
+						path(d='M16.084 2.537a1.993 1.993 0 00-1.406-1.435C13.418.75 8.438.75 8.438.75s-5.01 0-6.27.352A1.993 1.993 0 00.762 2.537C.41 3.767.41 6.404.41 6.404s0 2.608.352 3.867c.175.704.732 1.231 1.406 1.407 1.26.322 6.27.322 6.27.322s4.98 0 6.24-.322a1.954 1.954 0 001.406-1.407c.352-1.26.352-3.867.352-3.867s0-2.636-.352-3.867zm-9.287 6.24V4.031l4.16 2.373-4.16 2.373z' fill='#ffffff')
+				a.ssocials-item(target='_blank' href='https://t.me/')
+					svg(width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg')
+						path(d='M13.1953 1.45703C13.3594 0.691406 12.9219 0.390625 12.4297 0.582031L1.54688 4.76562C0.808594 5.06641 0.835938 5.47656 1.4375 5.66797L4.19922 6.51562L10.6523 2.46875C10.9531 2.25 11.2539 2.38672 11.0078 2.57812L5.78516 7.28125L5.59375 10.1523C5.89453 10.1523 6.00391 10.043 6.16797 9.87891L7.50781 8.56641L10.3242 10.6445C10.8438 10.9453 11.2266 10.7812 11.3633 10.1797L13.1953 1.45703Z' fill='#ffffff')
+
+	//.container.single-page-container
+		.row
+			.nv-single-page-wrap.col
+				.nv-content-wrap.entry-content
+					.is-layout-flex.wp-container-2.wp-block-columns
+						.is-layout-flow.wp-block-column
+					.wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile.is-image-fill(style='grid-template-columns:auto 30%')
+						figure.wp-block-media-text__media(style='background-image:url(https://anomiloserdie.ru/wp-content/uploads/2022/02/2.jpg);background-position:66% 33%')
+							img.wp-image-156.size-full(decoding='async' width='842' height='891' src='https://anomiloserdie.ru/wp-content/uploads/2022/02/2.jpg' alt='' srcset='https://anomiloserdie.ru/wp-content/uploads/2022/02/2.jpg 842w, https://anomiloserdie.ru/wp-content/uploads/2022/02/2-284x300.jpg 284w, https://anomiloserdie.ru/wp-content/uploads/2022/02/2-768x813.jpg 768w' sizes='(max-width: 842px) 100vw, 842px')
+						.wp-block-media-text__content
+							.is-layout-flex.wp-container-4.wp-block-columns
+								.is-layout-flow.wp-block-column
+									p(style='text-align: left;')
+										strong АНО СОБСПЗГ «Милосердие-на-Дону»
+										|  — это социально-ориентированная организация, целью создания которой является предоставление социально-полезных услуг в сфере профилактики и охраны здоровья граждан, улучшения морально-психологического состояния граждан.
+										br
+										| Очень часто человек остается один при выходе на пенсию, нарушении здоровья, инвалидности. Забота родных очень важна, но порой ее недостаточно, а иногда человек и во все не имеет семьи. Чувство одиночества, безысходности – бич современности. Помочь справиться с данной проблемой, повысить качество жизни граждан, попавших в трудную жизненную ситуацию – главная задача нашей организации.
+										br
+										| С 2018 года наши сотрудники предоставляют пакет социально-бытовых услуг и социально-психологического патронажа на дому более 300 обратившихся граждан города Ростова-на-Дону. Вид, количество необходимых услуг, период их предоставления определяются исходя из индивидуальных потребностей наших благополучателей.
+									p(style='text-align: left;')
+										em
+											| «Предоставление социальных услуг гражданам, обратившихся к нам, базируется на двух китах — доверии и ответственности: благополучатели доверяют нам, мы ответственно подходим к выполнению поставленных задач», — с
+										|  уважением, директор Автономной некоммерческой организации социального обслуживания, благотворительной и социальной поддержки и защиты граждан «Милосердие-на-Дону» Евгений Иванович Осяк.
+
